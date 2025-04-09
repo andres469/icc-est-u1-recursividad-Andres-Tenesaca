@@ -18,6 +18,10 @@ public class IccEstU1Recursividad {
         // TODO code application logic here
         int n=5;
         int resultadoFinal=factorial(n);
+        EjerciciosRecursivos eR =new EjerciciosRecursivos();
+       
+        System.out.println(eR.fibonacci(n));
+        System.out.println(eR.sumaConsecutivos(n));
     }
     public static int factorial(int n){
         if (n==0) {
@@ -29,4 +33,5 @@ public class IccEstU1Recursividad {
         return resultado;
     }
     
+   
 }
