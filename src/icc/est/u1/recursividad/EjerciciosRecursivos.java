@@ -2,6 +2,9 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+si el numero es menor que los 10, lo cual significa que solo tine un digito 
+se devuelbe el mismo numero,en caso contrario se estrae el ultimo digito utilizando el operador modulo %
+y se caclula el los digitos menos 
  */
 package icc.est.u1.recursividad;
 
@@ -20,7 +23,16 @@ public class EjerciciosRecursivos {
     }
     public int sumaConsecutivos(int n ){
         if (n==1) return 1;
-        System.out.println("n"+n);
+     
      return n+sumaConsecutivos(n-1);
     }
+    public int getPotencia(int n, int exponente){
+        if (exponente==0) return 1;     
+        return n*getPotencia(n,exponente-1); 
+    }
+    public int sumatoria(int n){
+        if (n<10) return n;
+        return n%10+sumatoria(n/10);
+    }
+    
 }

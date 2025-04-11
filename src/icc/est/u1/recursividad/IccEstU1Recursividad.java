@@ -22,6 +22,8 @@ public class IccEstU1Recursividad {
        
         System.out.println(eR.fibonacci(n));
         System.out.println(eR.sumaConsecutivos(n));
+        System.out.println("potencia: "+eR.getPotencia(5, 15));
+        System.out.println("sumarotia: "+ eR.sumatoria(15));
     }
     public static int factorial(int n){
         if (n==0) {
@@ -32,6 +34,8 @@ public class IccEstU1Recursividad {
         System.out.println("calcular factorial de " +n+ " * "+" (Factorial) ["+(n-1)+"]" +" = "+resultado );
         return resultado;
     }
+    
+ 
     
    
 }
