@@ -35,4 +35,16 @@ public class EjerciciosRecursivos {
         return n%10+sumatoria(n/10);
     }
     
+    public void desendente (int n){
+        if (n<0) return ;
+        System.out.println(n);
+         desendente(n-1);
+        return ;
+    }
+    public int reverso(int n){
+        if (n==0) return 1;
+        int da=n%10;
+        System.out.println("reverso "+da);
+        return reverso(n/10);
+    }
 }

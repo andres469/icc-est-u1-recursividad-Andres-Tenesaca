@@ -24,6 +24,10 @@ public class IccEstU1Recursividad {
         System.out.println(eR.sumaConsecutivos(n));
         System.out.println("potencia: "+eR.getPotencia(5, 15));
         System.out.println("sumarotia: "+ eR.sumatoria(15));
+        System.out.print("desendente: " );
+        eR.desendente(10);
+         System.out.println("reverso: "+ eR.reverso(12345678));
+       
     }
     public static int factorial(int n){
         if (n==0) {
